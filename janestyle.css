@@ -1,6 +1,6 @@
 /* image width */
 .centerimg {
-    position: centerimg;
+    position: center;
     width: 1200px;
     border: 0px;
     padding: 0px;
@@ -47,5 +47,4 @@ nav ul li a:hover + *{
 
 nav ul li ul li +* {
   display: block;
-  text-align: start;
 }
