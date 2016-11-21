@@ -3,47 +3,42 @@
   <head>
     <meta charset="utf-8">
     <style>
+nav {
+      height: 50px;
+      word-spacing: 10px;
+      margin-top: -50px;
+      align-items: stretch;
+      text-align: center;
+}
 
-    nav {
-      align-self: stretch;
-      background-color: grey;
-      height: 25px
-  }
+nav ul li {
+  display: inline-block;
+  font-family: Helvetica;
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
 
-     nav ul li {
-       display: inline-block;
-       background-color: grey;
-       text-align: center;
-     }
+nav ul + * {
+  align-items: center;
+}
 
-     nav ul + * {
-       align-items: center;
-       text-color: #000000;
-       text-decoration-color: #000000;
-     }
+nav ul li a + * {
+  display:none;
+  text-align: center;
+}
 
-     nav ul li a + * {
-       display:none;
-       background-color: grey;
-       text-align: center;
-       text-decoration: none;
-     }
+nav ul li a:hover + *{
+  display: block;
+  position: absolute;
+}
 
-     nav ul li a:hover + *{
-       display: block;
-       position:absolute;
-       background-color: grey;
-       text-align: center;
-     }
-
-     nav ul li ul li +* {
-       display:block;
-       color: grey;
-       text-align: center;
-       text-color: black;
-       text-decoration-color: black;
-       text-decoration: none;
-     }
+nav ul li ul li +* {
+  align-content: center;
+  display: block;
+  text-align: center;
+}
     </style>
     <title>Au fil de l'eau - Street Art Parisien</title>
   </head>
@@ -53,12 +48,12 @@
     </header>
     <nav>
       <ul>
-        <li><a href="index.html">Accueil  |</a></li>
-        <li><a href="SAP.html">Street-Art Parisien  |</a></li>
-        <li><a href="expos.html">Expos  |</a></li>
-        <li><a href="crews.html">Crews  |</a></li>
-        <li><a href="spots.html">Spots  |</a></li>
-        <li><a href="contact.html">Contact  |</a>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="SAP.html">Street-Art Parisien</a></li>
+        <li><a href="expos.html">Expos</a></li>
+        <li><a href="crews.html">Crews</a></li>
+        <li><a href="spots.html">Spots</a></li>
+        <li><a href="contact.html">Contact</a>
          <ul>
           <li class="submenu"><a href="questions.html">Vos questions</a></li>
           <li><a href="professional">Espace pro</a></li>
