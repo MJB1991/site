@@ -9,7 +9,6 @@
 /*Headbanner title*/
 .headbanner {
   font-family: Tahoma, monospace;
-  margin-top: -200px;
   text-align: center;
 
 }
@@ -20,7 +19,7 @@
   display: block;
   position:
   margin-top: -47px;
-  
+
 }
 
 /* navigation bar*/
