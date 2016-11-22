@@ -4,33 +4,47 @@
     width: 1200px;
     border: 0px;
     padding: 0px;
-    margin: inherit;
 }
+/*header*/
+.header {
+  background-color: #5D6D7E;
+  height: 400px;
+  width: 1200px;
+}
+
+
+
 /* navigation */
 
 
 nav {
   height: 50px;
-  width : 1200px;
-  word-spacing: 10px;
   margin-top: -50px;
   text-align: center;
-  align-items: flex-start;
-
 }
 
-nav ul li {
-  width: 10%;
+nav ul {
+  height: 50px;
+}
+
+nav > ul > li {
+  width: 14%;
   display: inline-block;
   font-family: Courier, monospace;
-  display: inline-block;
-  text-align: center;
 }
+
+nav li {
+  list-style-type: none;
+}
+
 nav ul li a {
-  font-size: 25px;
   color: black;
   text-decoration: none;
   font-variant: small-caps;
+}
+
+nav > ul > li > a {
+    font-size: 25px;
 }
 
 nav ul li a:visited {
@@ -44,9 +58,17 @@ nav ul li a + * {
 nav ul li a:hover + *{
   display: block;
   position: absolute;
-  text-align: left;
+}
+
+nav ul li a + *:hover {
+  display: block;
+  position: absolute;
 }
 
 nav ul li ul li +* {
   display: block;
+}
+
+ul > li:hover > a:hover {
+  position:absolute;
 }
