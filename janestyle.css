@@ -1,36 +1,39 @@
-/* image width */
+/* headbanner */
 .centerimg {
     position: center;
     width: 1200px;
     border: 0px;
     padding: 0px;
 }
-/*header*/
-.header {
-  background-color: #5D6D7E;
-  height: 400px;
-  width: 1200px;
+
+/*Headbanner title*/
+.headbanner {
+  font-family: Tahoma, monospace;
+  margin-top: -200px;
+  text-align: center;
+
 }
 
+/* background */
+/*HEAD TITLE*/
+.headbanner {
+  display: block;
+  position:
+  margin-top: -47px;
+  
+}
 
-
-/* navigation */
-
-
+/* navigation bar*/
 nav {
-  height: 50px;
   margin-top: -50px;
   text-align: center;
-}
-
-nav ul {
-  height: 50px;
 }
 
 nav > ul > li {
   width: 14%;
   display: inline-block;
   font-family: Courier, monospace;
+  font-weight: bolder;
 }
 
 nav li {
@@ -39,6 +42,7 @@ nav li {
 
 nav ul li a {
   color: black;
+  display:block;
   text-decoration: none;
   font-variant: small-caps;
 }
@@ -58,17 +62,43 @@ nav ul li a + * {
 nav ul li a:hover + *{
   display: block;
   position: absolute;
+  background-color: white;
 }
 
 nav ul li a + *:hover {
   display: block;
   position: absolute;
+  background-color: white;
 }
 
-nav ul li ul li +* {
+/*MAIN (NEWS)*/
+
+
+.article {
   display: block;
+  position: relative;
+  width: 800px;
+  height: 400px;
+
+}
+.articletitle {
+    display: inline-flex;
+    position: relative;
+    width: 600px;
 }
 
-ul > li:hover > a:hover {
-  position:absolute;
+#squaredimg {
+    display: block;
+    position: relative;
+    margin-left: 5px;
+}
+
+p {
+  position: absolute;
+  top: 46px;
+  left: 130px;
+  width: 591px;
+  text-align: justify;
+  font-size: 14px;
+  height: 120px;
 }
